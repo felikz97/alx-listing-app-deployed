@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { CardProps } from "@/types";
+import { CardProps } from "@/interfaces/index";
 import { Button } from "@/components/common/Button";
 import { UI_TEXT } from "@/constants";
 

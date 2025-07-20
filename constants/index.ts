@@ -380,6 +380,7 @@ export interface PropertyProps {
 }
 
 export const UI_TEXT = {
+  viewDetails: "View Details",
   card: {
     bookNow: "Book Now",
     pricePerNight: "per night",
