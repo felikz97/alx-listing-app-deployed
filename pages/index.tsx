@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import axios from "axios";
 import Card from "@/components/common/Card";
-
+import { useRouter } from "next/router";
 export default function Home() {
   const [properties, setProperties] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
