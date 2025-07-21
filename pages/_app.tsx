@@ -4,6 +4,10 @@ import Head from "next/head";
 import axios from "axios";
 import Card from "@/components/common/Card";
 import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/layout/Footer";
+import Layout from "@/components/layout/Layout";
+import Header from "@/components/layout/Header";
+
 
 
 export default function Home() {
@@ -14,7 +18,8 @@ export default function Home() {
     useEffect(() => {
         const fetchListings = async () => {
         try {
-            const response = await axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/properties`);
+            const response = await 
+            axios.get(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/properties`);
             setProperties(response.data);
         } catch (err) {
             console.error(err);
@@ -33,7 +38,7 @@ export default function Home() {
             <title>ALX Listing App</title>
         </Head>
 
-        <Navbar />
+        <Navbar /> 
         <div className="bg-gray-100 min-h-screen">
             <main className="max-w-6xl mx-auto px-6 py-10">
                 <h1 className="text-3xl font-bold mb-6 text-gray-800">
@@ -60,6 +65,7 @@ export default function Home() {
                 ))}
             </div>
             )}
+            <Footer />
         </main>
         </div>
         </>

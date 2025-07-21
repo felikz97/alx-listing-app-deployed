@@ -12,7 +12,8 @@ export default function LoginPage() {
         setError(null);
 
         try {
-        const res = await axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/token/`, credentials);
+        const res = await 
+        axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/token/`, credentials);
         localStorage.setItem("access_token", res.data.access);
         localStorage.setItem("refresh_token", res.data.refresh);
         router.push("/booking"); // redirect after login

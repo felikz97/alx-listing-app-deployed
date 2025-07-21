@@ -37,6 +37,12 @@ export default function Navbar() {
                 </Link>
             </>
             )}
+            {isLoggedIn && (
+            <Link href="/properties/create" className="text-green-600">
+                Add Property
+            </Link>
+            )}
+            
         </div>
         </nav>
     );
