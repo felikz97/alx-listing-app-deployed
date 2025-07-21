@@ -34,10 +34,11 @@ export default function Home() {
         </Head>
 
         <Navbar />
-        <main className="max-w-6xl mx-auto px-6 py-10">
-            <h1 className="text-3xl font-bold mb-6 text-gray-800">
-            Available Properties
-            </h1>
+        <div className="bg-gray-100 min-h-screen">
+            <main className="max-w-6xl mx-auto px-6 py-10">
+                <h1 className="text-3xl font-bold mb-6 text-gray-800">
+                    Available Properties
+                </h1>
 
             {loading && <p className="text-gray-500">Loading listings...</p>}
             {error && <p className="text-red-500">{error}</p>}
@@ -60,6 +61,7 @@ export default function Home() {
             </div>
             )}
         </main>
+        </div>
         </>
     );
 }

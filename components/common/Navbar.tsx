@@ -20,7 +20,7 @@ export default function Navbar() {
     return (
         <nav className="bg-white border-b shadow-sm px-6 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-blue-600">
-            🏡 ALXbnb
+                <img src="/assets/logo.png" alt="Logo" className="inline-block mr-2" />ALXbnb
         </Link>
 
         <div className="space-x-4">
