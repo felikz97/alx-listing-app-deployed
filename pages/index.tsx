@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import axios from "axios";
 import Card from "@/components/common/Card";
-import { useRouter } from "next/router";
+import Navbar from "@/components/common/Navbar";
 export default function Home() {
   const [properties, setProperties] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
@@ -31,6 +31,7 @@ export default function Home() {
         <title>ALX Listing App</title>
       </Head>
 
+      <Navbar />
       <main className="max-w-6xl mx-auto px-6 py-10">
         <h1 className="text-3xl font-bold mb-6 text-gray-800">
           Available Properties

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import axios from "axios";
 import Card from "@/components/common/Card";
+import Navbar from "@/components/common/Navbar";
 
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
             <title>ALX Listing App</title>
         </Head>
 
+        <Navbar />
         <main className="max-w-6xl mx-auto px-6 py-10">
             <h1 className="text-3xl font-bold mb-6 text-gray-800">
             Available Properties
