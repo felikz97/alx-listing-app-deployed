@@ -13,7 +13,7 @@ export default function LoginPage() {
 
         try {
         const res = await 
-        axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/token/`, credentials);
+        axios.post(`https://felikz97.pythonanywhere.com/api/token/`, credentials);
         localStorage.setItem("access_token", res.data.access);
         localStorage.setItem("refresh_token", res.data.refresh);
         router.push("/booking"); // redirect after login

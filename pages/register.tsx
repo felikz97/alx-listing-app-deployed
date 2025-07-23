@@ -22,7 +22,7 @@ export default function RegisterPage() {
     setSuccess(false);
 
     try {
-        await axios.post(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/users/`, formData);
+        await axios.post(`https://felikz97.pythonanywhere.com/api/users/`, formData);
         setSuccess(true);
         router.push("/login"); // redirect to login after success
         } catch (err: any) {
